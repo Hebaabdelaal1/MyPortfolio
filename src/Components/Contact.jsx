@@ -1,9 +1,16 @@
 import React from "react";
 import { FaFacebook, FaLinkedin, FaGithub, FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
-
+import { motion } from "framer-motion";
 const Contact = () => {
   return (
     <section id="contact" className="bg-gray-900 text-white py-16 px-6 md:px-20 min-h-screen">
+            <motion.div
+
+  initial={{ opacity: 0, y: 50 }}          
+  whileInView={{ opacity: 1, y: 0 }}      
+  viewport={{ once: true, amount: 0.2 }}  
+  transition={{ duration: 0.8, delay: .5 }} 
+>
       <div className="max-w-6xl mx-auto">
 
       <h2 className="text-4xl font-extrabold text-center mb-12">
@@ -106,6 +113,7 @@ const Contact = () => {
         </form>
         </div>
       </div>
+      </motion.div>
     </section>
   );
 };

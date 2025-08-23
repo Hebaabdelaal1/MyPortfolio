@@ -2,6 +2,7 @@ import React from "react";
 import { FaHtml5, FaCss3Alt, FaJs, FaAngular, FaReact, FaGithub, FaSass, FaBootstrap } from "react-icons/fa";
 import { SiTypescript, SiTailwindcss, SiFirebase, SiNextdotjs, SiMaterialdesign } from "react-icons/si";
 import { MdApi } from "react-icons/md";
+import { motion } from "framer-motion";
 
 const skills = [
   { name: "HTML", level: "95%", icon: <FaHtml5 className="text-orange-500 text-2xl" /> },
@@ -24,21 +25,27 @@ const skills = [
 const Aboutme = () => {
   return (
 <section id="about" className="bg-gray-900 text-gray-300 min-h-screen px-6 md:px-20 flex flex-col justify-start">
-  <div className="max-w-3xl text-left space-y-6 mt-10">
-   <h1 className="text-xl md:text-6xl font-extrabold text-white">
-      I'm <span className="text-indigo-400 bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-500 bg-clip-text text-transparent">Heba Abdelaal-</span>
-    </h1>
-    <h2 className="text-2xl md:text-3xl font-semibold text-gray-300">
-      Frontend Developer
-    </h2>
 
 
- <p className="text-lg md:text-xl text-gray-400 leading-relaxed">
-      Passionate Front-End Developer skilled in <span className="text-indigo-400 font-semibold">Angular</span>, <span className="text-cyan-400 font-semibold">React</span>, 
-      and  web technologies including HTML, CSS, JavaScript, and TypeScript. I specialize in building responsive, user-friendly web applications with clean, efficient code and dynamic interfaces. With experience in React Native and Material-UI, I strive to deliver seamless user experiences while continuously learning and growing in the field of web development.
+<motion.div
+  className="max-w-3xl text-left space-y-6 mt-10"
+  initial={{ opacity: 0, y: 50 }}          
+  whileInView={{ opacity: 1, y: 0 }}      
+  viewport={{ once: true, amount: 0.2 }}  
+  transition={{ duration: 0.8, delay: .5 }} 
+>
+  <h1 className="text-xl md:text-6xl font-extrabold text-white">
+    I'm <span className="text-indigo-400 bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-500 bg-clip-text text-transparent">Heba Abdelaal</span>
+  </h1>
 
-    </p>
+  <h2 className="text-2xl md:text-3xl font-semibold text-gray-300">
+    Frontend Developer
+  </h2>
 
+  <p className="text-lg md:text-xl text-gray-400 leading-relaxed">
+    Passionate Front-End Developer skilled in <span className="text-indigo-400 font-semibold">Angular</span>, <span className="text-cyan-400 font-semibold">React</span>, 
+    and web technologies including HTML, CSS, JavaScript, and TypeScript. I specialize in building responsive, user-friendly web applications with clean, efficient code and dynamic interfaces. With experience in React Native and Material-UI, I strive to deliver seamless user experiences while continuously learning and growing in the field of web development.
+  </p>
 
   <div className="flex flex-col sm:flex-row gap-4 mt-6 justify-start">
     <a
@@ -55,11 +62,19 @@ const Aboutme = () => {
       Contact Me
     </a>
   </div>
-</div>
+</motion.div>
+
 
 
 <section  className="py-16 bg-gray-900 text-white">
   <div className="max-w-5xl mx-auto px-6">
+    <motion.div
+
+  initial={{ opacity: 0, y: 50 }}          
+  whileInView={{ opacity: 1, y: 0 }}      
+  viewport={{ once: true, amount: 0.2 }}  
+  transition={{ duration: 0.8, delay: .5 }} 
+>
 
         <h2  className="text-4xl font-extrabold text-center mb-12"> 
           <span className="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 text-transparent bg-clip-text drop-shadow-lg underline decoration-indigo-400 decoration-4 underline-offset-6">
@@ -101,11 +116,19 @@ const Aboutme = () => {
       </div>
 
     </div>
+</motion.div>
   </div>
+  
 </section>
 
 
+    <motion.div
 
+  initial={{ opacity: 0, y: 50 }}          
+  whileInView={{ opacity: 1, y: 0 }}      
+  viewport={{ once: true, amount: 0.2 }}  
+  transition={{ duration: 0.8, delay: .5 }} 
+>
   <div id='skills' className="max-w-7xl  pt-8 px-4">
     <h2  className="text-4xl font-extrabold text-center mb-12"> 
           <span className="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 text-transparent bg-clip-text drop-shadow-lg underline decoration-indigo-400 decoration-4 underline-offset-6">
@@ -140,7 +163,7 @@ const Aboutme = () => {
     ))}
   </div>
 </div>
-
+</motion.div>
     </section>
   );
 };

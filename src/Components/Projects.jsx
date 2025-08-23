@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   const projects = [
@@ -31,6 +32,13 @@ const Projects = () => {
 
   return (
     <section className="py-16 bg-gray-900 text-white" id="projects">
+                  <motion.div
+      
+        initial={{ opacity: 0, y: 50 }}          
+        whileInView={{ opacity: 1, y: 0 }}      
+        viewport={{ once: true, amount: 0.2 }}  
+        transition={{ duration: 0.8, delay: .5 }} 
+      >
       <div className="max-w-6xl mx-auto px-6">
   
         <h2 className="text-4xl font-extrabold text-center mb-12">
@@ -85,6 +93,7 @@ const Projects = () => {
           ))}
         </div>
       </div>
+      </motion.div>
     </section>
   );
 };

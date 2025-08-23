@@ -1,6 +1,7 @@
 
 import './App.css'
 import Aboutme from './Components/Aboutme'
+import ScrollToTop from './Components/buttonScroll'
 import Contact from './Components/Contact'
 import Footer from './Components/footer'
 import Header from './Components/Header'
@@ -17,6 +18,7 @@ function App() {
       <Aboutme />
       <Projects />
       <Contact />
+      <ScrollToTop />
       <Footer/>
     </>
   )

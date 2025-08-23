@@ -110,7 +110,9 @@ const Navbar = () => {
       <motion.img
         src="/src/assets/Images/personalpic.jpg"
         alt="Heba Abdelaal"
-        className="rounded-full w-100 h-100 object-cover  border-indigo-700 shadow-lg shadow-indigo-700/40 cursor-pointer"
+      className="rounded-full w-100 h-100 object-cover border-indigo-700 
+           shadow-[0_0_25px_10px_rgba(99,102,241,0.5)] cursor-pointer"
+
         animate={{
           y: [0, -10, 0], 
         }}

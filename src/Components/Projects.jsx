@@ -9,14 +9,14 @@ const Projects = () => {
       name: "E-commerce Jumia Clone",
       description:
         "Built with Onion Architecture, Entity Framework, and AutoMapper. Features localization and a scalable Admin Dashboard.",
-      image: "/src/assets/Images/Jumia.png",
+      image: "Images/Jumia.png",
       github: "https://github.com/Hebaabdelaal1/jumia-clone",
     },
     {
       id: 2,
       name: "E-Commerce B.Tech Clone",
       description: "Frontend clone using JavaScript, HTML5, and CSS3.",
-      image: "/src/assets/Images/B.tech.png",
+      image: "Images/B.tech.png",
       github: "https://github.com/Hebaabdelaal1/B.TECH-Frontend",
     },
     {
@@ -24,7 +24,7 @@ const Projects = () => {
       name: "Udemy Clone",
       description:
         "Frontend with React.js, Firebase backend, and Material-UI for modern design.",
-      image: "/src/assets/Images/Udemy.png",
+      image: "Images/udemy.png",
       github: "https://github.com/Hebaabdelaal1/-udemy-clone",
       livedemo: "https://udemy-client-791t.vercel.app/",
     },

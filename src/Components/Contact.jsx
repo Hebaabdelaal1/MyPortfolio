@@ -9,7 +9,7 @@ const Contact = () => {
   initial={{ opacity: 0, y: 50 }}          
   whileInView={{ opacity: 1, y: 0 }}      
   viewport={{ once: true, amount: 0.2 }}  
-  transition={{ duration: 0.8, delay: .5 }} 
+  transition={{ duration: 0.8, delay: .2 }} 
 >
       <div className="max-w-6xl mx-auto">
 

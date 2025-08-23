@@ -46,7 +46,7 @@ const Navbar = () => {
     className="text-xl font-medium text-gray-300 mt-2"
     initial={{ opacity: 0, y: 20 }}
     animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 1, delay: 2 }}
+    transition={{ duration: 1, delay: 1.5 }}
   >
   
     <p>  Building Modern Web Applications</p>
@@ -57,7 +57,7 @@ const Navbar = () => {
     className="flex items-center justify-center md:justify-start gap-6 mt-4"
     initial={{ opacity: 0, y: 20 }}
     animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 1, delay: 3 }}
+    transition={{ duration: 1, delay: 2}}
   >
     <div className="bg-gray-800 p-3 rounded-xl shadow hover:shadow-lg transition">
       <FaReact className="text-cyan-400 text-3xl" />
@@ -82,7 +82,7 @@ const Navbar = () => {
       whileTap={{ scale: 0.95 }}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: 3.5 }}
+      transition={{ duration: 0.6, delay: 2.5 }}
     >
       Download CV
     </motion.a>
@@ -94,7 +94,7 @@ const Navbar = () => {
       whileTap={{ scale: 0.95 }}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: 3.8 }}
+      transition={{ duration: 0.6, delay: 2.8 }}
     >
       Contact Me
     </motion.a>

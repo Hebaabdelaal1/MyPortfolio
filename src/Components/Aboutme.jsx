@@ -32,7 +32,7 @@ const Aboutme = () => {
   initial={{ opacity: 0, y: 50 }}          
   whileInView={{ opacity: 1, y: 0 }}      
   viewport={{ once: true, amount: 0.2 }}  
-  transition={{ duration: 0.8, delay: .5 }} 
+  transition={{ duration: 0.8, delay: .2 }} 
 >
   <h1 className="text-xl md:text-6xl font-extrabold text-white">
     I'm <span className="text-indigo-400 bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-500 bg-clip-text text-transparent">Heba Abdelaal</span>
@@ -73,7 +73,7 @@ const Aboutme = () => {
   initial={{ opacity: 0, y: 50 }}          
   whileInView={{ opacity: 1, y: 0 }}      
   viewport={{ once: true, amount: 0.2 }}  
-  transition={{ duration: 0.8, delay: .5 }} 
+  transition={{ duration: 0.8, delay: .2 }} 
 >
 
         <h2  className="text-4xl font-extrabold text-center mb-12"> 
@@ -127,7 +127,7 @@ const Aboutme = () => {
   initial={{ opacity: 0, y: 50 }}          
   whileInView={{ opacity: 1, y: 0 }}      
   viewport={{ once: true, amount: 0.2 }}  
-  transition={{ duration: 0.8, delay: .5 }} 
+  transition={{ duration: 0.8, delay: .2}} 
 >
   <div id='skills' className="max-w-7xl  pt-8 px-4">
     <h2  className="text-4xl font-extrabold text-center mb-12"> 

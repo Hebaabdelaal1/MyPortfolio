@@ -54,8 +54,8 @@ const Header = () => {
           <a href="#about" className="flex items-center gap-2 hover:text-indigo-400 transition" onClick={() => setIsOpen(false)}>
             <User className="h-5 w-5" /> About me
           </a>
-          <a href="#education" className="flex items-center gap-2 hover:text-indigo-400 transition" onClick={() => setIsOpen(false)}>
-            <GraduationCap className="h-5 w-5" /> Education
+          <a href="#skills" className="flex items-center gap-2 hover:text-indigo-400 transition" onClick={() => setIsOpen(false)}>
+            <FaTools className="h-5 w-5" /> Skills
           </a>
           <a href="#projects" className="flex items-center gap-2 hover:text-indigo-400 transition" onClick={() => setIsOpen(false)}>
             <Code2 className="h-5 w-5" /> Projects

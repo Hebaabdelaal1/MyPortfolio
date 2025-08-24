@@ -102,32 +102,29 @@ const Navbar = () => {
 </div>
 
 
-      <div className="relative flex justify-center items-center mt-10 md:mt-0">
+     <div className="relative flex justify-center items-center mt-10 md:mt-0">
+  <div className="absolute w-40 md:w-64 h-40 md:h-64 rounded-full bg-gradient-to-r from-indigo-400 via-purple-500 to-pink-500 opacity-40 animate-pulse blur-3xl"></div>
 
-      <div className="absolute w-64 h-64 rounded-full bg-gradient-to-r from-indigo-400 via-purple-500 to-pink-500 opacity-40 animate-pulse blur-3xl"></div>
-      
+  <motion.img
+    src="Images/personalpic.jpg"
+    alt="Heba Abdelaal"
+    className="rounded-full w-50 md:w-100 h-50 md:h-100 object-cover border-indigo-700 shadow-[0_0_25px_10px_rgba(99,102,241,0.5)] cursor-pointer"
+    animate={{
+      y: [0, -10, 0], 
+    }}
+    transition={{
+      duration: 4,
+      repeat: Infinity,
+      repeatType: "loop",
+    }}
+    whileHover={{
+      scale: 1.05,
+      rotate: [0, 3, -3, 0],
+      transition: { duration: 0.5 },
+    }}
+  />
+</div>
 
-      <motion.img
-        src="Images/personalpic.jpg"
-        alt="Heba Abdelaal"
-      className="rounded-full w-100 h-100 object-cover border-indigo-700 
-           shadow-[0_0_25px_10px_rgba(99,102,241,0.5)] cursor-pointer"
-
-        animate={{
-          y: [0, -10, 0], 
-        }}
-        transition={{
-          duration: 4,
-          repeat: Infinity,
-          repeatType: "loop",
-        }}
-        whileHover={{
-          scale: 1.05,
-          rotate: [0, 3, -3, 0],
-          transition: { duration: 0.5 },
-        }}
-      />
-    </div>
     </section>
   );
 };

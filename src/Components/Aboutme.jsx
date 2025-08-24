@@ -10,13 +10,13 @@ const skills = [
   { name: "JavaScript", level: "85%", icon: <FaJs className="text-yellow-400 text-2xl" /> },
   { name: "TypeScript", level: "80%", icon: <SiTypescript className="text-blue-400 text-2xl" /> },
   { name: "Angular", level: "85%", icon: <FaAngular className="text-red-600 text-2xl" /> },
-  { name: "React", level: "90%", icon: <FaReact className="text-cyan-400 text-2xl" /> },
+  { name: "React", level: "80%", icon: <FaReact className="text-cyan-400 text-2xl" /> },
   { name: "React Native", level: "80%", icon: <FaReact className="text-indigo-400 text-2xl" /> },
   { name: "Material-UI", level: "90%", icon: <SiMaterialdesign className="text-blue-300 text-2xl" /> },
-  { name: "Tailwind CSS", level: "85%", icon: <SiTailwindcss className="text-teal-400 text-2xl" /> },
+  { name: "Tailwind CSS", level: "80%", icon: <SiTailwindcss className="text-teal-400 text-2xl" /> },
   { name: "GitHub", level: "90%", icon: <FaGithub className="text-gray-300 text-2xl" /> },
-  { name: "SASS", level: "80%", icon: <FaSass className="text-pink-400 text-2xl" /> },
-  { name: "Bootstrap", level: "85%", icon: <FaBootstrap className="text-purple-500 text-2xl" /> },
+  { name: "SASS", level: "75%", icon: <FaSass className="text-pink-400 text-2xl" /> },
+  { name: "Bootstrap", level: "90%", icon: <FaBootstrap className="text-purple-500 text-2xl" /> },
   { name: "Firebase", level: "75%", icon: <SiFirebase className="text-yellow-500 text-2xl" /> },
   { name: "REST APIs", level: "80%", icon: <MdApi className="text-green-400 text-2xl" /> },
   { name: "Next.js", level: "70%", icon: <SiNextdotjs className="text-white text-2xl" /> },
@@ -34,7 +34,7 @@ const Aboutme = () => {
   viewport={{ once: true, amount: 0.2 }}  
   transition={{ duration: 0.8, delay: .2 }} 
 >
-  <h1 className="text-xl md:text-6xl font-extrabold text-white">
+  <h1 className="text-3xl md:text-6xl font-extrabold text-white">
     I'm <span className="text-indigo-400 bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-500 bg-clip-text text-transparent">Heba Abdelaal</span>
   </h1>
 
@@ -151,7 +151,7 @@ const Aboutme = () => {
             {skill.icon}
             <span className="text-white font-medium">{skill.name}</span>
           </div>
-          <span className="text-blue-400 font-semibold">{skill.level}</span>
+          {/* <span className="text-blue-400 font-semibold">{skill.level}</span> */}
         </div>
         <div className="w-full bg-gray-700 rounded-full h-2.5">
           <div
